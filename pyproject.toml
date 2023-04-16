@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "chunking"
+version = "0.1.0"
+description = "Chunking: the key to scaling with Dask and Xarray"
+authors = ["Mark de Wijk"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyter = "^1.0.0"
+xarray = "2022.3.0"
+dask = "^2023.3.2"
+matplotlib = "^3.7.1"
+graphviz = "^0.20.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["jupyter"], version = "^23.3.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
